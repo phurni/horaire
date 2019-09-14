@@ -1,0 +1,26 @@
+body { font-family: sans-serif; }
+h2 { text-align: center; margin-top: 0; }
+
+button { font-size: 200%; }
+#next { float: right; }
+
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+caption { margin-bottom: 1rem; font-size: 200%;}
+tbody { border: solid medium; }
+td { border: solid thin; position: relative; height: 3em; overflow: hidden;}
+th { border: solid thin; padding: 0.5em; text-align: center; }
+th.none { border: none; width: 5em; }
+
+.item-0 { position: absolute; top: 0; left: 0; padding: 0.25em; font-weight: bold; }
+.item-1 { position: absolute; bottom: 0; left: 0; padding: 0.25em; }
+.item-2 { position: absolute; bottom: 0; right: 0; padding: 0.25em; }
+.item-3 { position: absolute; top: 0; right: 0; padding: 0.25em; }
+
+td.empty { background-color: #ddd;}
+td.periods { width: 5em; }
+td.periods.left  .start { position: absolute; top: 0; right: 0; padding: 0.25em; }
+td.periods.left  .end   { position: absolute; bottom: 0; right: 0; padding: 0.25em; }
+td.periods.right .start { position: absolute; top: 0; left: 0; padding: 0.25em; }
+td.periods.right .end   { position: absolute; bottom: 0; left: 0; padding: 0.25em; }
+td.periods .number { padding: 0.25em; font-size: 150%; }
+td.periods.right .number { float: right; }
