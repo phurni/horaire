@@ -10,8 +10,10 @@
     <meta name="theme-color" content="#ffffff">
     <script>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js');
+        navigator.serviceWorker.register('sw.js', { scope: '/horaire' }).then(() => {
+          console.log('Service Worker registered successfully.');
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
         });
       }
     </script>
