@@ -1,7 +1,7 @@
 {
     "name": "Horaires Gymnase",
     "short_name": "HorGy",
-    "start_url": "index.html",
+    "start_url": "index.html#config_url=data/config.json&schedules_url=data/1920-1C7-l1.txt",
     "scope": "./",
     "icons": [
         {
