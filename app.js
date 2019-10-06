@@ -26612,12 +26612,12 @@ Opal.modules["views/schedule"] = function(Opal) {
     $writer[$rb_minus($writer["length"], 1)];;
     output_buffer.$append("</b> du <b>");
     
-    $writer = [self.$current_week_date().$strftime("%-d %B")];
+    $writer = [self.$current_week_date().$strftime("%-d %b")];
     $send(output_buffer, 'append=', Opal.to_a($writer));
     $writer[$rb_minus($writer["length"], 1)];;
     output_buffer.$append("</b> au <b>");
     
-    $writer = [$rb_plus(self.$current_week_date(), $rb_times($rb_times($rb_times($rb_minus(self.$days().$size(), 1), 24), 60), 60)).$strftime("%-d %B")];
+    $writer = [$rb_plus(self.$current_week_date(), $rb_times($rb_times($rb_times($rb_minus(self.$days().$size(), 1), 24), 60), 60)).$strftime("%-d %b")];
     $send(output_buffer, 'append=', Opal.to_a($writer));
     $writer[$rb_minus($writer["length"], 1)];;
     output_buffer.$append("" + "</b></caption>\n" + "  <thead>\n" + "    <tr>\n" + "      <th class=\"none\"></th>\n" + "      ");
