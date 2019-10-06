@@ -2,7 +2,8 @@ body { font-family: sans-serif; }
 h2 { text-align: center; margin-top: 0; }
 
 button { font-size: 200%; }
-#next { float: right; }
+#previous { position: absolute; top: 0; left: 0; }
+#next { position: absolute; top: 0; right: 0; }
 
 table { border-collapse: collapse; width: 100%; table-layout: fixed; }
 caption { margin-bottom: 1rem; font-size: 200%;}

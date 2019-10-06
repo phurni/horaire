@@ -1,5 +1,5 @@
 <table>
-  <caption>Semaine <b><%= current_week_number %></b> du <b><%= current_week_date.strftime("%-d %B") %></b> au <b><%= (current_week_date + (days.size-1)*24*60*60).strftime("%-d %B") %></b></caption>
+  <caption>Semaine <b><%= current_week_number %></b> du <b><%= current_week_date.strftime("%-d %b") %></b> au <b><%= (current_week_date + (days.size-1)*24*60*60).strftime("%-d %b") %></b></caption>
   <thead>
     <tr>
       <th class="none"></th>
